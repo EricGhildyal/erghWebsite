@@ -1,0 +1,63 @@
+/* -------------------- Fonts -------------------- */
+@font-face {
+    font-family: 'din';
+    src: url('fonts/din1451engschrift-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'sketch';
+  src: url('fonts/SketchBlock.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* -------------------- Body -------------------- */
+.time-container{
+  width: 45%;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+
+.time{
+  font-family: 'sketch';
+  font-size: 170px;
+  padding: 20px;
+  color: grey;
+}
+
+.time-desc{
+  font-family: 'din';
+  padding: 10px;
+  font-size: 40px;
+}
+
+.text-desc{
+  font-family: 'din';
+  font-size: 30px;
+  padding: 15px;
+}
+
+@media screen and (max-width: 1024px){
+  .time-container{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .time{
+    font-size: 80px;
+  }
+
+  .time-desc{
+    font-size: 30px;
+  }
+
+}
+/* -------------------- Footer -------------------- */
+.footer{
+  font-family: 'din';
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+}
