@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="bootstrap theme Win95" />
+    <meta name="author" content="Naif" />
+
+    <title>UNTITLED</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- Custom styles for this template -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../css/bootstrap-theme-win95.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <!--
+      HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body role="document" style="background: rgb(192,192,192);">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            EasyCommunity™ <br />
+            <p class="small">A Pearston™ Company</p>
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="logout.html">Home</a></li>
+          </ul>
+
+          <div class="navbar-right user">Logged in as "Michael Dsouza"</div>
+        </div>
+        <!-- /.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+      <br /><br /><br /><br />
+      <a href="logout.html">BACK</a>
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Sacrifice Schedule</h2>
+          <p style="color: red;">
+            **If you are a student, please leave this page immediately!**
+          </p>
+          <p style="color: red;" class="bold">**SECRET FOR YOUR EYES ONLY**</p>
+          <div class="row">
+            <div class="col-md-12">
+              <table class="table">
+                <thead>
+                  <h2 class="bold">Current Term Sacrifices</h2>
+                  <tr>
+                    <th>Student ID</th>
+                    <th>Cause</th>
+                    <th>Date of Execution</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr id="stu" style="display: none;">
+                    <td>2P-4923457599</td>
+                    <td>Accessed Admin Content on EasyCommunity™</td>
+                    <td>IMMEDIATELY, Alumni Hall</td>
+                  </tr>
+                  <tr>
+                    <td>2P-2350698345</td>
+                    <td>Underpaid Tuition by $1.12</td>
+                    <td>Dec 21, 8pm, Alumni Hall</td>
+                  </tr>
+                  <tr>
+                    <td>2P-0960472783</td>
+                    <td>Failed Class</td>
+                    <td>Dec 21, 8pm, Alumni Hall</td>
+                  </tr>
+                  <tr>
+                    <td>2P-1947035582</td>
+                    <td>Looked at Chancellor Gallagher and did not wave</td>
+                    <td>Dec 28, 8pm, Alumni Hall</td>
+                  </tr>
+                  <tr>
+                    <td>2P-9252723403</td>
+                    <td>Reported health code violation at Market Central™</td>
+                    <td>Dec 28, 8pm, Alumni Hall</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p class="text-muted" style="font-size: 16px;">
+          <span style="font-size: 14px;float: right;"
+            >/*Copyright 2018 Eric Ghildyal*/</span
+          >
+        </p>
+      </div>
+    </div>
+
+    <!--
+      Bootstrap core JavaScript
+      ==================================================
+    -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+      $(function() {
+        setTimeout(function () { 
+          alert("YOUR UNLAWFUL ACCESS OF THIS PAGE HAS BEEN REPORTED TO CSSD");
+          $('#stu').show();
+        }, 5000);
+      });
+    </script>
+  </body>
+</html>

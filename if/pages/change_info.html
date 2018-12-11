@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="bootstrap theme Win95" />
+    <meta name="author" content="Naif" />
+
+    <title>UNTITLED</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- Custom styles for this template -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../css/bootstrap-theme-win95.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <!--
+      HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body role="document" style="background: rgb(192,192,192);">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            EasyCommunity™ <br />
+            <p class="small">A Pearston™ Company</p>
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="logout.html">Home</a></li>
+          </ul>
+
+          <div class="navbar-right user">Logged in as "Michael Dsouza"</div>
+        </div>
+        <!-- /.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+      <br /><br /><br /><br />
+      <a href="level1.html">BACK</a>
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Change Student Info</h2>
+          <p>Warning: you may only change this information once for free</p>
+          <form role="form" id="sinfo">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Name</label>
+              <input
+                type="text"
+                placeholder="Name"
+                class="form-control"
+                value="Michael Dsouza"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">DOB</label>
+              <input
+                type="text"
+                placeholder="DOB"
+                class="form-control"
+                value="1997-20-07"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Address</label>
+              <input
+                type="text"
+                placeholder="Address"
+                class="form-control"
+                value="315 Oakland Ave, Pittsburgh PA"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Status</label>
+              <input
+                type="text"
+                placeholder="Status"
+                class="form-control"
+                value="Pending Death"
+              />
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Change Graduation Info</h2>
+          <p>
+            This action cannot be performed online, please download the
+            paperwork first, edit it, and then upload it with the upload button.
+          </p>
+          <h3>Name: <span class="bold">Michelle Dsouza</span></h3>
+          <h3>Major: <span class="bold">Computer Science</span></h3>
+        </div>
+        <button type="button" id="dl" class="btn btn-default">Download</button>
+        <button type="button" id="ul" class="btn btn-default">Upload</button>
+      </div>
+
+      <div class="footer">
+        <p class="text-muted" style="font-size: 16px;">
+          <span style="font-size: 14px;float: right;"
+            >/*Copyright 2018 Eric Ghildyal*/</span
+          >
+        </p>
+      </div>
+    </div>
+
+    <!--
+      Bootstrap core JavaScript
+      ==================================================
+    -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+      $(function() {
+        var clicks = 0;
+        $('#sinfo').on('submit', function(e) {
+          e.preventDefault();
+          alert(
+            'You have already changed this info once, a fee of $37 has been applied to your tuition'
+          );
+        });
+        $('#dl').click(function(e) {
+          e.preventDefault();
+          alert('Download should commence soon-ish');
+          setTimeout(function() {
+            window.location = '../dsouza_graduation_application.pdf';
+          }, 3000);
+        });
+        $('#ul').click(function(e) {
+          e.preventDefault();
+          clicks++;
+          var chance = Math.floor(Math.random() * (100 - 0 + 1)) + 0;
+          if (chance > 0 && chance < 40) {
+            $('#ul').animate({
+              marginLeft: '+=30px'
+            });
+          } else if (chance > 40 && chance < 60) {
+            $('#ul').animate({
+              marginTop: '+=30px'
+            });
+          } else if (chance > 60 && chance < 80) {
+            $('#ul').animate({
+              marginRight: '+=30px'
+            });
+          } else {
+            $('#ul').animate({
+              marginBottom: '+=30px'
+            });
+          }
+          if (clicks == 5) window.location = 'error.html';
+        });
+      });
+    </script>
+  </body>
+</html>

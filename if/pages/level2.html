@@ -10,14 +10,14 @@
     <title>UNTITLED</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <!-- Custom styles for this template -->
     <link
       rel="stylesheet"
       type="text/css"
-      href="css/bootstrap-theme-win95.css"
+      href="../css/bootstrap-theme-win95.css"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <!--
       HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
     -->
@@ -51,28 +51,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
           </ul>
 
-          <form class="navbar-form navbar-right" id="login" role="form">
-            <div class="form-group">
-              <input
-                name="username"
-                type="text"
-                placeholder="Username"
-                class="form-control"
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="password"
-                name="password"
-                placeholder="Password"
-                class="form-control"
-              />
-            </div>
-            <button type="submit" class="btn btn-default">Sign in</button>
-          </form>
+          <div class="navbar-right user">Logged in as "Michael Dsouza"</div>
         </div>
         <!-- /.nav-collapse -->
       </div>
@@ -80,23 +62,25 @@
 
     <div class="container theme-showcase" role="main">
       <br /><br /><br /><br />
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Hello, welcome to EasyCommunity™!</h1>
-        <p>
-          This is your one-stop-shop where you can have fun, learn, and pay
-          tuition!
-        </p>
+      <div class="row">
+        <div class="col-sm-6">
+          <h2 class="bold">MENU:</h2>
+          <div class="list-group">
+            <a href="dont_click.html" class="list-group-item"
+              >DON’T CLICK THIS</a
+            >
+            <a href="grades.html" class="list-group-item">View Grades</a>
+            <a href="#" id="enrollment" class="list-group-item">Enrollment</a>
+            <a href="transfer.html" class="list-group-item">Transfer Credit</a>
+            <a href="search.html" class="list-group-item">Class Search</a>
+            <a href="change_info.html" id="change" class="list-group-item"
+              >Change Student Info</a
+            >
+          </div>
+        </div>
       </div>
 
-      <div class="postit">
-        <span class="bold">TODO:</span>
-        <span>Complete Narrative and Technology Project</span>
-        <span>Update name on grad application</span>
-        <span>Change credentials from "admin"</span>
-      </div>
-
-      <div class="container footer">
+      <div class="footer">
         <p class="text-muted" style="font-size: 16px;">
           <span style="font-size: 14px;float: right;"
             >/*Copyright 2018 Eric Ghildyal*/</span
@@ -110,21 +94,13 @@
       ==================================================
     -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../js/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <script>
-      $(function() {
-        $('#login').on('submit', function(e) {
-          e.preventDefault();
-          var data = $('#login :input').serializeArray();
-          if (data[0].value === 'admin' && data[1].value === 'admin') {
-            window.location.replace('pages/level1.html');
-          } else {
-            alert(
-              'Incorrect Password! Try again or fill out the "Forgot Password Form" available at Panther Central, fax it to 412-678-9483, and pay the small $25 fee'
-            );
-          }
-        });
+      $('#enrollment').click(function() {
+        alert(
+          'You will not be able to register for classes next semester as you are scheduled for a ritual dͫ̓͏͉͚e̝͎̜̼͋͊̅͢a͙͈̺̘͕͎͚̲ͯ̍̔́̒ͣț̙̦ͥ̃͒ͥ͂͟h̸̥̺͈͓̦̔ͧ͊ͯ̈͋͡'
+        );
       });
     </script>
   </body>
